@@ -1,6 +1,6 @@
 [package]
 name = "reset_frame_selection_on_focus-aux2"
-version = "0.0.0"
+version = "0.1.0"
 edition = "2024"
 
 [lib]
