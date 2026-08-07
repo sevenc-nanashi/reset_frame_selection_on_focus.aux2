@@ -4,6 +4,10 @@
 
 オブジェクトを選択したときにフレーム選択を解除するAviUtl2用の汎用プラグイン。
 
+> [!TIPS]
+> **もし「フレーム洗濯中は再生範囲がそこに固定されるので不便」という理由でこのプラグインを使う方へ：**\
+> 再生バーを右クリックしたメニューからその挙動を無効化できます。
+
 ## インストール
 
 [Releases](https://github.com/sevenc-nanashi/reset_frame_selection_on_focus.aux2/releases/latest)から`sevenc-nanashi.reset_frame_selection_on_focus-aux2-v<バージョン>.au2pkg.zip`をダウンロードし、AviUtl2のプレビューにドラッグ&ドロップしてください。
