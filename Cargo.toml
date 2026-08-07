@@ -1,0 +1,12 @@
+[package]
+name = "reset_frame_selection_on_focus-aux2"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+name = "reset_frame_selection_on_focus_aux2"
+
+[dependencies]
+aviutl2 = "0.42.0"
+aviutl2-eframe = "0.42.0"

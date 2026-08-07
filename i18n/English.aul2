@@ -1,0 +1,7 @@
+[Language]
+Information=reset_frame_selection_on_focus.aux2 (English) / https://github.com/sevenc-nanashi/reset_frame_selection_on_focus.aux2
+
+[Menu]
+通常モードに切り替え=Switch to Normal Mode
+選択範囲を変更するまで無効化=Disable until selection changes
+一時的に無効化=Disable

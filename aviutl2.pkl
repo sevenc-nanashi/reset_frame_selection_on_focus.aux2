@@ -1,0 +1,51 @@
+// 設定ファイルについては https://github.com/sevenc-nanashi/aviutl2-cli を参照してください。
+amends "https://raw.githubusercontent.com/sevenc-nanashi/aviutl2-cli/refs/tags/0.10.2/src/AviUtl2CliConfig.pkl"
+
+project {
+  id = "sevenc-nanashi.reset_frame_selection_on_focus-aux2"
+  name = "reset_frame_selection_on_focus.aux2"
+  version = "0.1.0"
+}
+
+development {
+  aviutl2_version = "latest"
+  catalog_dependencies = List("Book-0225.EAP2")
+}
+
+release {
+  prebuild = "cargo about generate -o release/package.txt about.hbs"
+  package_template = "release/package.txt"
+}
+
+artifacts {
+  ["reset_frame_selection_on_focus-aux2"] {
+    destination = "Plugin/reset_frame_selection_on_focus.aux2"
+    profiles {
+      ["debug"] {
+        build = "cargo build"
+        source = "target/debug/reset_frame_selection_on_focus_aux2.dll"
+      }
+      ["release"] {
+        build = "cargo build --release"
+        source = "target/release/reset_frame_selection_on_focus_aux2.dll"
+      }
+    }
+  }
+  ["Default-reset_frame_selection_on_focus-aux2-aul2"] {
+    destination = "Language/Default.reset_frame_selection_on_focus-aux2.aul2"
+    source = "i18n/Default.aul2"
+  }
+  ["English-reset_frame_selection_on_focus-aux2-aul2"] {
+    destination = "Language/English.reset_frame_selection_on_focus-aux2.aul2"
+    source = "i18n/English.aul2"
+  }
+}
+
+catalog {
+  id = "sevenc-nanashi.reset_frame_selection_on_focus-aux2"
+  download_repo {
+    owner = "sevenc-nanashi"
+    repo = "reset_frame_selection_on_focus.aux2"
+  }
+  license_path = "./LICENSE"
+}
