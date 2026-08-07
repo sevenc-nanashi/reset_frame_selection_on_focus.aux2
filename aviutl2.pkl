@@ -31,10 +31,6 @@ artifacts {
       }
     }
   }
-  ["Default-reset_frame_selection_on_focus-aux2-aul2"] {
-    destination = "Language/Default.reset_frame_selection_on_focus-aux2.aul2"
-    source = "i18n/Default.aul2"
-  }
   ["English-reset_frame_selection_on_focus-aux2-aul2"] {
     destination = "Language/English.reset_frame_selection_on_focus-aux2.aul2"
     source = "i18n/English.aul2"
